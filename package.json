@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dmdusang/meadowlark_node/issues"
   },
-  "homepage": "https://github.com/dmdusang/meadowlark_node#readme"
+  "homepage": "https://github.com/dmdusang/meadowlark_node#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
