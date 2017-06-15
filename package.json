@@ -1,0 +1,19 @@
+{
+  "name": "meadowlark",
+  "version": "1.0.0",
+  "description": "meadowlard travel site",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmdusang/meadowlark_node.git"
+  },
+  "author": "dmdusang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmdusang/meadowlark_node/issues"
+  },
+  "homepage": "https://github.com/dmdusang/meadowlark_node#readme"
+}
