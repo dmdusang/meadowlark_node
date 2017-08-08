@@ -17,7 +17,19 @@
   },
   "homepage": "https://github.com/dmdusang/meadowlark_node#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "express3-handlebars": "^0.5.2"
+    "express3-handlebars": "^0.5.2",
+    "phantomjs": "^2.1.7"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chromedriver": "^2.30.1",
+    "grunt": "^1.0.1",
+    "grunt-cafe-mocha": "^0.1.13",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-mocha-selenium": "^1.0.1",
+    "mocha": "^3.4.2",
+    "selenium-webdriver": "^3.4.0"
   }
 }
