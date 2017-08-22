@@ -1,5 +1,6 @@
 // Set up express
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
 
 //Grab Fortune
@@ -25,13 +26,14 @@ app.set('view engine', 'handlebars');
 
 
 
-
 // Set up which port we want
 app.set('port', process.env.PORT || 3000);
 
 // Set up static middleware to handle static clientside files
 app.use(express.static(__dirname + '/public'));
-app.use(require('body-parser')());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(bodyParser.json());
 
 //Set up automated testing middleware
 
@@ -51,6 +53,7 @@ app.use(function(req,res,next){
 });
 
 //Routes
+
 
 app.get('/', function(req,res){
 	res.render('home');
@@ -97,6 +100,8 @@ app.use(function(err,req,res,next){
 	res.status(500);
 	res.render('500');
 });
+
+
 
 app.listen(app.get('port'), function(){
 	console.log('Express started on http://localhost:' + app.get('port') +'; press Ctrl-C to terminate');
